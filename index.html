@@ -10,9 +10,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap" rel="stylesheet">
     <!-- Link a BoxIcons -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-
     <!-- Link a los archivos CSS -->
     <link rel="stylesheet" href="styles.css">
+    <!-- Link a Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
 
 </head>
 
@@ -26,26 +28,145 @@
         </ul>
     </nav>
 
-    <section class="hero">
+    <section class="hero mb-5">
         <div>
             <img src="images/470426472_3362483970555148_446054536142813157_n.webp" alt="">
         </div>
         <div class="hero-content">
             <h1>Máximo Verdi</h1>
             <a class="dispo" href="">Disponible para trabajar</a>
-            <p>Estudiante de <strong style="color: #ffab03;">desarrollo web y dueño de una marca de ropa en Argentina</strong>, me encuentro en constante aprendizaje</p>
+            <p>Estudiante de <strong style="color: #5d47cc;">desarrollo web y dueño de una marca de ropa en
+                    Argentina</strong>, me encuentro en constante aprendizaje</p>
             <ul class="social-list">
                 <li><a href="#"><i class='bx bxl-linkedin'></i></a></li>
                 <li><a href="#"><i class='bx bxl-github'></i></a></li>
                 <li><a href="#"><i class='bx bxl-instagram'></i></a></li>
             </ul>
             <div class="contact-btn">
-                <a href="mailto:maximoverdi21@gmail.com?Subject=Cotizacion%20Web"><i class='bx bx-mail-send' ></i>Contactame</a>
+                <a href="mailto:maximoverdi21@gmail.com?Subject=Cotizacion%20Web"><i
+                        class='bx bx-mail-send'></i>Contactame</a>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="position-relative overflow-hidden py-6 py-lg-8 text-center">
+        <h2>Proyectos</h2>
+        <style>
+            .bento_simple>[class^='col-'] {
+                max-height: 24rem;
+            }
+        </style>
+
+        <div class="container position-relative">
+            <div class="row bg-body bg-opacity-75 position-relative bento_simple g-4 mw-lg-8 mx-auto mt-3">
+                <div class="col-md-4">
+                    <div
+                        class="lc-block h-100 mx-auto col-md-auto mw-md-2 border bg-white p-3 rounded-3 shadow-sm justify-content-between d-flex flex-column">
+                        <div class="d-flex flex-fill w-100 h-100 rounded-2 mb-3"
+                            style="min-height:6rem;isolation: isolate;">
+                            <img class="img-fluid rounded-2 object-fit-cover"
+                                src="images/fadu.png"
+                                sizes="(max-width: 1080px) 100vw, 1080px" width="1080" height="1080"
+                                alt="Photo by Nathan Truong" style="mix-blend-mode:screen;">
+                        </div>
+                        <div>
+
+                            <div class="lc-block pt-2">
+                                <div>
+                                    <h3 class="small fw-semibold mb-3">Fadu Webite</h3> 
+                                    <p class="small">Reperesentacion de una web mas moderna de la facultad de arquitectura.</p> 
+                                </div>
+                            </div>
+                            <div class="web-tech">
+                                <p><i class='bx bxl-sass' ></i>Sass</p>
+                                <p><i class='bx bxl-javascript' ></i>Javascript</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div
+                        class="lc-block h-100 mx-auto col-md-auto border bg-white p-3 rounded-3 shadow-sm justify-content-between d-flex flex-column">
+                        <div class="d-flex flex-fill w-100 h-100 rounded-2 mb-3"
+                            style="min-height:6rem;isolation:isolate;">
+                            <img class="img-fluid rounded-2 object-fit-cover "
+                                src="images/legado-automoviles.png"
+                                sizes="(max-width: 1080px) 100vw, 1080px" width="1080" height="768" alt="Foto de la web de legado automoviles"
+                                alt="Photo by Qingbao Meng" style="mix-blend-mode:screen;">
+                        </div>
+                        <div>
+
+                            <div class="lc-block pt-2">
+                                <div>
+                                    <h3 class="small fw-semibold mb-3">Legado automoviles</h3>
+                                    <p class="small">Web de la empresa legado automoviles. Donde podras vender tu vehiculo rapidamente y bien asesorado.</p>
+                                </div>
+                            </div>
+                            <div class="web-tech">
+                                <p><i class='bx bxl-sass' ></i>Sass</p>
+                                <p><i class='bx bxl-javascript' ></i>Javascript</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div
+                        class="lc-block h-100 mx-auto col-md-auto border bg-white p-3 rounded-3 shadow-sm justify-content-between d-flex flex-column">
+                        <div class="d-flex flex-fill w-100 h-100 rounded-2 mb-3"
+                            style="min-height:6rem;isolation: isolate;">
+                            <img class="img-fluid rounded-2 object-fit-cover"
+                                src="images/Stellar-universe.png"
+                                sizes="(max-width: 1080px) 100vw, 1080px" width="1080" height="768" alt="Foto de la web de Stellar Universe"
+                                style="mix-blend-mode:screen;">
+                        </div>
+                        <div>
+
+                            <div class="lc-block pt-2">
+                                <div>
+                                    <h3 class="small fw-semibold mb-3">Stellar Universe</h3>
+                                    <p class="small">La wikipedia de la astronomia, una pagina en donde encontraras toda la informacion que necesitas para aprender sobre el universo.</p>
+                                </div>
+                            </div>
+                            <div class="web-tech">
+                                <p><i class='bx bxl-sass' ></i>Sass</p>
+                                <p><i class='bx bxl-javascript' ></i>Javascript</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div
+                        class="lc-block h-100 mx-auto col-md-auto mw-md-1 border bg-white p-3 rounded-3 shadow-sm justify-content-between d-flex flex-column">
+                        <div class="d-flex flex-fill w-100 h-100 rounded-2 mb-3"
+                            style="min-height:6rem;isolation: isolate;">
+                            <img class="img-fluid rounded-2 object-fit-cover"
+                                src="images/memorium.png"
+                                sizes="(max-width: 1080px) 100vw, 1080px" width="1080" height="1080" alt="Foto de la web de memorium"
+                                style="mix-blend-mode:screen;">
+                        </div>
+                        <div>
+
+                            <div class="lc-block pt-2">
+                                <div>
+                                    <h3 class="small fw-semibold mb-3">Memorium the game</h3>
+                                    <p class="small">Videojuego que te ayudara a ejercitar tu memoria</p> 
+                                </div>
+                                <div class="web-tech">
+                                    <p><i class='bx bxl-sass' ></i>Sass</p>
+                                    <p><i class='bx bxl-javascript' ></i>Javascript</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
     <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
 </body>
 
 
