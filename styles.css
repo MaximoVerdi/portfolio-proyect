@@ -24,6 +24,13 @@ h2 {
     gap: 10px;
 }
 
+:root {
+    --Color-violeta: #5d47cc;
+    --Color-texto-gris: #111111e6;
+    --Color-verde: #4ed044e6;
+    --Borde-opacado: #1111113d;
+}
+
 .nav {
     position: fixed;
     top: 10px;
@@ -58,12 +65,12 @@ h2 {
 }
 
 .nav-item a {
-    color: #111111e6;
+    color: var(--Color-texto-gris);
     font-size: .9em;
 }
 
 .nav-item a:hover {
-    color: #5d47cc;
+    color: var(--Color-violeta);
 }
 
 .hero {
@@ -93,24 +100,61 @@ h2 {
 
 .hero-content h1 {
     font-size: 3.5em;
-    color: #111111e6;
+    color: var(--Color-texto-gris);
 }
 
 .hero-content p {
     margin: 5px 0;
-    color: #111111e6;
+    color: var(--Color-texto-gris);
     font-size: 1.2em;
 }
 
 .dispo {
     font-size: .8em;
-    color: #4ed044e6;
-    border: 1px solid #4ed044e6;
+    color: var(--Color-verde);
+    background-color: #fff;
     border-radius: 999px;
     padding: 3px 6px;
     width: fit-content;
     margin-bottom: 10px;
+    position: relative;
 }
+
+/* Animacion del boton Disponible para trabajar */
+
+@property --angle {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
+.dispo::after {
+    --angle: 0deg;
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 102%;
+    height: 105%;
+    background-image: conic-gradient(from var(--angle),transparent 50%, var(--Color-verde));
+    z-index: -1;
+    translate: -50% -50%;
+    border-radius: 999px;
+    animation: 3s spin infinite linear;
+}
+
+@keyframes spin {
+    from {
+        --angle: 0deg;
+    }
+    to {
+        --angle: 360deg;
+    }
+}
+
+/* Fin Animacion del boton Disponible para trabajar */
+
+
 
 .social-list {
     margin-top: 15px;
@@ -121,17 +165,28 @@ h2 {
 
 .social-list li a{
     font-size: 1.7em;
-    color: #111111e6;
+    color: var(--Color-texto-gris);
+    transition: .2s;
+}
+
+.social-list li a:hover {
+    color: var(--Color-violeta);
 }
 
 .contact-btn a{
     display: flex;
     align-items: center;
     width: fit-content;
-    color: #111111e6;
-    border: 1px solid #1111113d;
+    color: var(--Color-texto-gris);
+    border: 1px solid var(--Borde-opacado);
     padding: 7px 12px;
     border-radius: 999px;
+    transition: .4s;
+}
+
+.contact-btn a:hover{ 
+    color: #fff;
+    background-color: var(--Color-violeta);
 }
 
 .contact-btn a i {
@@ -155,6 +210,9 @@ h2 {
 }
 
 
+
+/* Media Queries */
+
 @media screen and (max-width: 1016px) {
     .hero-content {
         text-align: center;
@@ -168,7 +226,7 @@ h2 {
 
     .hero-content h1 {
         font-size: 3rem;
-        color: #111111e6;
+        color: var(--Color-texto-gris);
         text-wrap: nowrap;
         text-align: center;
     }
